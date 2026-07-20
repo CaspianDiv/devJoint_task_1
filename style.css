@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none
+}
+
+
+#logo {
+    font: normal 2rem/10px 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #2980f2;
+}
+
+nav {
+    padding: 30px 10px;
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    color: #2980f2;
+    font: bold 1.2rem Arial, sans-serif;
+    cursor: pointer;
+}
+
+#desktop-display a:hover {
+    text-decoration: underline;
+}
+
+#desktop-display {
+    display: none;
+}
+
+#desktop-display.active {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #ffff;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.hamburger {
+    font-size: 2.1rem;
+    cursor: pointer;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 80vh;
+    background: rgba(227, 227, 241, 0.94);
+}
+
+#hero button {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: aliceblue;
+    cursor: pointer;
+}
+
+#hero button a {
+    font-size: 1rem;
+    font-family: "Elms Sans", sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #0b4a9b;
+}
+
+#hero button:hover{
+    background: #02029b;
+}
+
+#hero button:hover a{
+    color: #ffff;
+}
+
+
+#hero h1 {
+    font: 2rem "Elms Sans", sans-serif;
+    text-indent: 10px;
+    color: #0b4a9b;
+}
+
+#hero p {
+    font-family: "Elms Sans", sans-serif;
+    color: #0b4a9b;
+}
+
+
+.about-div{
+    padding: 50px 20px 10px 20px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content {
+    background: #2980f293;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-div h2{
+    font: 500 2rem  "Elms Sans", sans-serif;
+    text-transform: capitalize;
+}
+
+.about-div .par-content {
+    font: 600 1.5rem "Elms Sans", sans-serif;
+}
+
+.about-div p {
+    font: 600 1rem "Elms Sans", sans-serif;
+    text-justify: inter-word;
+}
+
+#about-card-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-card-1 , .about-card-2 {
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 12px;
+    text-transform: capitalize;
+    box-shadow: 5px 5px 10px #000;
+}
+
+
+#projects-gallery h2 {
+    font: 500 2rem "Elms Sans" , sans-serif;
+    padding: 40px 10px 0px 10px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;    
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#contact h2 {
+    font: 500 2rem "Elms Sans" , sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 50px 10px 30px 10px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    div {
+        background: #ffff;
+        box-shadow: 5px 5px 20px  #dedddd;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 30px;
+        p {
+            font: 600 1.2rem "Elms Sans" , sans-serif;
+            /* padding: 10px 5px 10px 0px; */
+        }
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            width: 100%;
+        }
+        textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .contact-btn {
+            padding: 10px;
+            background: #181894;
+            text-transform: capitalize;
+            border: none;
+            color: #ffff;
+            font: 600 1rem "Elms sans" , sans-serif;
+            cursor: pointer;
+            border-radius: 5px;
+        }   
+    }
+}
+
+
+footer {
+    background: #030362;
+    padding: 20px;
+    p {
+        font: 600 1rem "Elms sans" , sans-serif;
+        color: #ccc;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .hamburger{
+        display: none;
+    }
+
+    #desktop-display {
+        display: flex;
+        gap: 40px;
+    }
+
+    #about-card-container {
+        flex-direction: row;
+    }
+
+    .gallery {
+        flex-direction: row;
+        justify-content: space-around;
+        div {
+            max-width: 33%;
+        }
+    }
+
+    #projects-gallery {
+        background: #679fe993;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 20px;
+    }
+
+    #contact div {
+        width: 60%;
+    }
+}
