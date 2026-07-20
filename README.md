@@ -23,7 +23,7 @@ Bu layihə CaspianTech adlı (fiktiv) texnologiya şirkəti üçün hazırlanmı
 
 | Hero bölməsi | Haqqımızda | Qalereya | Əlaqə |
 |:---:|:---:|:---:|:---:|
-| ![Hero](./screenshots/hero.png) | ![About](./screenshots/about.png) | ![Gallery](./screenshots/gallery.png) | ![Contact](./screenshots/contact.png) |
+| ![Hero](./img/hero.png) | ![About](./img/about.png) | ![Gallery](./img/gallery.png) | ![Contact](./img/contact.png) |
 
 ## 🚀 Necə işə salmaq olar
 
